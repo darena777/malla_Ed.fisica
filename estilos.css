@@ -8,28 +8,47 @@ body {
 
 h1 {
   color: #d63384;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 #malla-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 12px;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  background: #ffe3ef;
+  border-radius: 10px;
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+.columna h2 {
+  margin-bottom: 1rem;
+  color: #b11263;
+  border-bottom: 2px solid #d63384;
+  padding-bottom: 4px;
 }
 
 .materia {
   background-color: #f8d7e9;
   border: 2px solid #f3a6ca;
-  padding: 10px 16px;
-  border-radius: 10px;
-  min-width: 160px;
+  padding: 10px 12px;
+  border-radius: 8px;
   cursor: pointer;
   user-select: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
   opacity: 0.5;
   pointer-events: none;
   font-weight: bold;
+  color: #4b2c39;
 }
 
 .materia.habilitada {
@@ -42,4 +61,3 @@ h1 {
   color: white;
   border-color: #ad1457;
 }
-
