@@ -1,1 +1,45 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f6;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #d63384;
+  margin-bottom: 1.5rem;
+}
+
+#malla-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.materia {
+  background-color: #f8d7e9;
+  border: 2px solid #f3a6ca;
+  padding: 10px 16px;
+  border-radius: 10px;
+  min-width: 160px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  pointer-events: none;
+  font-weight: bold;
+}
+
+.materia.habilitada {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.materia.activada {
+  background-color: #d63384;
+  color: white;
+  border-color: #ad1457;
+}
 
